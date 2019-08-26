@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>
+			Aula 1 - Prog Web II
+		</title>
+		<meta charset = 'UTF-8'/>
+	</head>
+	<body>
+		<form method = "POST" action = "aula3.php">
+			<fieldset>
+				<legend>Formulário</legend>
+				<p>
+					<label>Ano de Nascimento: </label>
+					<input type = "date" name = "date-value" id = "data" />
+					<button name = "btn-verify">Verificar</button>
+				</p>
+				<p>
+					<label>Peso: </label>
+					<input type = "text" name = "weight-value" id = "weight" />
+					<label>Altura: </label>
+					<input type = "text" name = "height-value" id = "height" />
+					<button name = "btn-imc">Calcular IMC</button>
+				</p>
+				<p>
+					<label>Dia da semana: </label>
+					<input type = "text" name = "day-value" id = "day" required/>
+					<button name = "btn-analyze">Analisar</button>
+				</p>
+			</fieldset>
+		</form>
+	</body>
+</html>
