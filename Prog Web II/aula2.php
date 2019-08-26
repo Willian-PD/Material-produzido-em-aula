@@ -45,5 +45,68 @@ echo "<br>O valor decrementado de $c é ".--$c; // incrementa e depois imprime
 echo "<br>O valor decrementado de $c é ".$c--; // imprime o valor real e depois incrementa
 echo "<br>$c";
 
+// Exemplo prático
+
+$num1 = 2;
+$num2 = 4;
+$num3 = 8;
+
+$resultado1 = ++$num2 - $num1;
+$resultado2 = $num3-- + $num1;
+
+echo "<br>O valor de resposta1 é ".$resultado1."<br>O valor de resposta2 é ".$resultado2;
+
+// Operadores de atribuição
+$valor = 20;
+$valor += 30;
+echo "<br>A soma dos valores é ".$valor;
+$valor *= 30;
+echo "<br>O produto dos valores é ".$valor;
+$valor /= 30;
+echo "<br>O quoeficiente dos valores é ".$valor;
+
+// Operador ternário
+$n1 = $_GET["a"];
+$n2 = $_GET["b"];
+
+$maior = $n1 > $n2 ? $n1 : $n2;
+echo "<br>O maior valor é ".$maior;
+
+// Operadores relacionais
+// Operador igual == Verifica a equidade dos dados
+$w = 3;
+$m = "3";
+
+$result = ($w == $m) ? true : false;
+echo"<br>O valor é diferente? ". $result;
+
+// Operador diferente != Verifica a equidade dos dados
+$w = 3;
+$m = "3";
+
+$result = ($w != $m) ? true : false;
+echo"<br>O valor é diferente? ". $result;
+
+// Operador identeidade === Verifica a equidade total dos dados
+$w = 3;
+$m = "3";
+
+$result = ($w === $m) ? true : false;
+echo"<br>O valor é diferente? ". $result;
+
+// Operador identeidade !== Verifica a equidade total dos dados
+$w = 3;
+$m = "3";
+
+$result = ($w !== $m) ? true : false;
+echo"<br>O valor é diferente? ". $result;
+
+// Operadores lógicos and(&&), or(||) e not(!)
+$ano = $_GET["e"];
+$idade = 2019 - $ano;
+
+echo"<br>Nascidos em $ano tem idade igual a $idade";
+$voto = ($idade >=18) && ($idade <= 65) ? "obrigatório" : "não obrigatório";
+echo"<br>Seu voto é $voto";
 
 ?>
