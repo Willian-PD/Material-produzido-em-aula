@@ -70,4 +70,12 @@ passados*/
 	echo"<br>";
 	var_dump($d);
 
+/* 3° função - wordwrap (para fazer quebra de linha)*/
+	
+	$texto = "vamos inserir um texto gigante para testarmos a função";
+
+	$result = wordwrap($texto, 5, "<br>");
+
+	echo $result;
+
 ?>
